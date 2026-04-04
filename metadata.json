@@ -1,0 +1,7 @@
+{
+  "name": "Diamond Well and Pump",
+  "description": "Professional well and pump services in Volusia County, Florida. Fast, reliable repair and replacement for homeowners and businesses.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
