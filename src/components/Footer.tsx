@@ -23,14 +23,11 @@ export default function Footer() {
               Your local Volusia County well and pump experts. Fast, reliable service for homeowners, farms, and businesses. Licensed and insured.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-blue-600 transition-colors">
+              <a href="https://www.facebook.com/DiamondWellandPump" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-800 rounded-full hover:bg-blue-600 transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-blue-600 transition-colors">
+              <a href="https://www.instagram.com/diamondwellpump/" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-800 rounded-full hover:bg-blue-600 transition-colors">
                 <Instagram className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-blue-600 transition-colors">
-                <Twitter className="w-5 h-5" />
               </a>
             </div>
           </div>

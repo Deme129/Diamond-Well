@@ -17,21 +17,7 @@ export default function About() {
       {/* Company Story */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div className="relative">
-              <div className="aspect-square rounded-3xl overflow-hidden shadow-2xl border-8 border-gray-50">
-                <img
-                  src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=1000"
-                  alt="Well pump technician"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <div className="absolute -bottom-10 -right-10 bg-blue-600 p-10 rounded-3xl shadow-2xl hidden md:block">
-                <div className="text-4xl font-black text-white mb-1">Local</div>
-                <div className="text-blue-100 font-bold uppercase tracking-widest text-sm">Volusia County Roots</div>
-              </div>
-            </div>
+          <div className="max-w-4xl mx-auto">
             <div>
               <span className="text-blue-600 font-black uppercase tracking-widest text-sm mb-4 block">Our Story</span>
               <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-8 tracking-tight leading-tight">Built on Hard Work and Honest Service</h2>

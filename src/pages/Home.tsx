@@ -75,7 +75,7 @@ export default function Home() {
       <section className="py-24 bg-gray-900 text-white overflow-hidden relative">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-600/10 skew-x-12 translate-x-20"></div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div className="max-w-4xl mx-auto">
             <div>
               <span className="text-blue-400 font-black uppercase tracking-widest text-sm mb-4 block">The Diamond Difference</span>
               <h2 className="text-4xl md:text-5xl font-black mb-8 tracking-tight leading-tight">Why Volusia County Trusts Diamond Well & Pump</h2>
@@ -96,20 +96,6 @@ export default function Home() {
                     </div>
                   </div>
                 ))}
-              </div>
-            </div>
-            <div className="relative">
-              <div className="aspect-square rounded-3xl overflow-hidden border-8 border-white/5 shadow-2xl">
-                <img
-                  src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=1000"
-                  alt="Professional well service"
-                  className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-              <div className="absolute -bottom-10 -left-10 bg-blue-600 p-10 rounded-3xl shadow-2xl hidden md:block">
-                <div className="text-4xl font-black mb-1">100%</div>
-                <div className="text-blue-100 font-bold uppercase tracking-widest text-sm">Satisfaction Guaranteed</div>
               </div>
             </div>
           </div>

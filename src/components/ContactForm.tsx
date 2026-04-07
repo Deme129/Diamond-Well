@@ -6,14 +6,37 @@ export default function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate API call
-    setTimeout(() => {
+    
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/Diamondwellandpump@gmail.com", {
+        method: "POST",
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        form.reset();
+      } else {
+        console.error("Form submission failed");
+        alert("There was an error submitting your request. Please try calling us instead.");
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      alert("There was an error submitting your request. Please try calling us instead.");
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-    }, 1500);
+    }
   };
 
   if (submitted) {
@@ -55,6 +78,7 @@ export default function ContactForm() {
               required
               type="text"
               id="name"
+              name="name"
               className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
               placeholder="Your full name"
             />
@@ -65,6 +89,7 @@ export default function ContactForm() {
               required
               type="tel"
               id="phone"
+              name="phone"
               className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
               placeholder="(386) 000-0000"
             />
@@ -77,6 +102,7 @@ export default function ContactForm() {
             required
             type="email"
             id="email"
+            name="email"
             className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none"
             placeholder="email@example.com"
           />
@@ -86,6 +112,7 @@ export default function ContactForm() {
           <label htmlFor="issue" className="text-sm font-bold text-gray-700 uppercase tracking-wider">Type of Issue</label>
           <select
             id="issue"
+            name="issue"
             className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none appearance-none"
           >
             <option>No Water / Emergency</option>
@@ -101,6 +128,7 @@ export default function ContactForm() {
           <label htmlFor="message" className="text-sm font-bold text-gray-700 uppercase tracking-wider">Message</label>
           <textarea
             id="message"
+            name="message"
             rows={4}
             className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none resize-none"
             placeholder="Tell us about your problem..."

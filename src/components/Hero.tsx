@@ -5,15 +5,9 @@ import { motion } from 'motion/react';
 export default function Hero() {
   return (
     <section className="relative bg-gray-900 overflow-hidden py-20 lg:py-32">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1581094288338-2314dddb7ec3?auto=format&fit=crop&q=80&w=2000"
-          alt="Well pump technician working"
-          className="w-full h-full object-cover opacity-30"
-          referrerPolicy="no-referrer"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/80 to-transparent"></div>
+      {/* Background */}
+      <div className="absolute inset-0 z-0 bg-gray-900">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-900/40 via-gray-900 to-gray-900"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">

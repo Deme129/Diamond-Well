@@ -35,13 +35,6 @@ export default function StickyCallButton() {
               <Phone className="w-5 h-5" />
               <span>CALL NOW</span>
             </a>
-            <a
-              href="/contact"
-              className="flex items-center justify-center bg-gray-900 text-white w-16 h-16 rounded-2xl font-black shadow-2xl active:scale-95 transition-transform"
-              aria-label="Request Service"
-            >
-              <MessageSquare className="w-6 h-6" />
-            </a>
           </div>
         </motion.div>
       )}

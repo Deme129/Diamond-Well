@@ -2,11 +2,7 @@ import { Phone, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const images = [
-  { url: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ec3?auto=format&fit=crop&q=80&w=800', title: 'Pump Replacement' },
-  { url: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800', title: 'System Inspection' },
   { url: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800', title: 'Pressure Tank Install' },
-  { url: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&q=80&w=800', title: 'Well Troubleshooting' },
-  { url: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ec3?auto=format&fit=crop&q=80&w=800', title: 'Irrigation Pump Repair' },
   { url: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=800', title: 'Shallow Well Service' }
 ];
 
