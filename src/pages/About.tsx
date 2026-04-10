@@ -30,7 +30,7 @@ export default function About() {
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 {[
-                  { icon: ShieldCheck, title: 'Licensed & Insured', desc: 'Fully protected for your peace of mind.' },
+                  { icon: ShieldCheck, title: 'Licensed Professional', desc: 'Expert service you can trust for your peace of mind.' },
                   { icon: CheckCircle2, title: 'Quality Parts', desc: 'We only use top-tier equipment and components.' },
                   { icon: Clock, title: 'Fast Response', desc: 'Same-day service for no-water emergencies.' },
                   { icon: MapPin, title: 'Local Knowledge', desc: 'We understand Florida\'s unique water systems.' }

@@ -20,7 +20,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-sm leading-relaxed">
-              Your local Volusia County well and pump experts. Fast, reliable service for homeowners, farms, and businesses. Licensed and insured.
+              Your local Volusia County well and pump experts. Fast, reliable service for homeowners, farms, and businesses. Fully licensed.
             </p>
             <div className="flex gap-4">
               <a href="https://www.facebook.com/DiamondWellandPump" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-800 rounded-full hover:bg-blue-600 transition-colors">

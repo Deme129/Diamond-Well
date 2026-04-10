@@ -83,7 +83,7 @@ export default function Home() {
               <div className="space-y-8">
                 {[
                   { icon: Clock, title: 'Same-Day Response', desc: 'We know water issues are urgent. We aim for same-day service for all no-water calls.' },
-                  { icon: ShieldCheck, title: 'Licensed & Insured', desc: 'Work with confidence knowing your property is protected by a fully insured local business.' },
+                  { icon: ShieldCheck, title: 'Licensed Professional', desc: 'Work with confidence knowing your property is serviced by a licensed local business.' },
                   { icon: CheckCircle2, title: 'Honest Diagnosis', desc: 'We only recommend what you actually need. No high-pressure sales or hidden fees.' }
                 ].map((item, i) => (
                   <div key={i} className="flex gap-6">

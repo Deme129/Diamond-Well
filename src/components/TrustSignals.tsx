@@ -4,8 +4,8 @@ export default function TrustSignals() {
   const signals = [
     {
       icon: ShieldCheck,
-      title: 'Licensed & Insured',
-      description: 'Fully protected for your peace of mind.'
+      title: 'Licensed Professional',
+      description: 'Expert service you can trust for your peace of mind.'
     },
     {
       icon: Award,

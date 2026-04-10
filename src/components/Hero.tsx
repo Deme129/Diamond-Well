@@ -49,7 +49,7 @@ export default function Hero() {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
               {[
-                { icon: ShieldCheck, text: 'Licensed & Insured' },
+                { icon: ShieldCheck, text: 'Licensed Professional' },
                 { icon: CheckCircle2, text: 'Local Family Owned' },
                 { icon: Clock, text: 'Same-Day Service' }
               ].map((item, i) => (

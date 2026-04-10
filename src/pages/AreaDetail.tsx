@@ -46,7 +46,7 @@ export default function AreaDetail() {
                   'Local technicians who know the area',
                   'Expert troubleshooting for all systems',
                   'Honest, upfront pricing',
-                  'Licensed and insured professionals',
+                  'Licensed professionals',
                   'Full service for residential & commercial'
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
